@@ -23,45 +23,90 @@
  <!-- NAVBAR
 ================================================== -->
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-
-	<div class="container">
-	  <div class="row">
-		<nav class="col-sm-1" id="myScrollspy">
-		  <ul class="nav nav-pills nav-stacked">
-			<li class="active"><a href="#section1">Projects</a></li>
-			<li><a href="#section2">Books</a></li>
-			<li><a href="#section3">Section 3</a></li>
-			<li class="dropdown">
-			  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-			  <ul class="dropdown-menu">
-				<li><a href="#section41">Section 4-1</a></li>
-				<li><a href="#section42">Section 4-2</a></li>                     
-			  </ul>
-			</li>
-		  </ul>
-		</nav>
-		<div class="col-sm-9">
-		  <div id="section1">    
-			<h1>Section 1</h1>
-			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+	 <div class="container">
+	 	 <div class="row">
+		<h3>franky.id's Personal Website</h3>
+		<blockquote class="blockquote-reverse">
+		<p>A man in need is a man indeed, yes, indeed a man</p>
+		<footer>Elementary School Notebook</footer>
+		</blockquote>
+	 </div>
+	<div class="row">
+		<div class="progress">
+			<div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
+			aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
+			99%, almost there, a little bit more
+			</div>
+		</div>
+	</div>
+	 <div class="row">
+		<div class="col-sm-8">
+		  <div id="projects">    
+			<h4>Projects</h4>
+			<hr/>
+			<table class="table" border="0">
+				<tbody>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 2"></td>			
+					</tr>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 2"></td>
+					</tr>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Project 2"></td>
+					</tr>
+				</tbody>
+			</table>
+		    <br/>
 		  </div>
-		  <div id="section2"> 
-			<h1>Section 2</h1>
-			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
-		  </div>        
-		  <div id="section3">         
-			<h1>Section 3</h1>
-			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
-		  </div>
-		  <div id="section41">         
-			<h1>Section 4-1</h1>
-			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
-		  </div>      
-		  <div id="section42">         
-			<h1>Section 4-2</h1>
-			<p>Try to scroll this section and look at the navigation list while scrolling!</p>
+		  <div id="books"> 
+			<h4>Books</h4>
+			<hr/>
+			<table class="table table-bordered">
+				<tbody>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 2"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 3"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 4"></td>					
+					</tr>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 2"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 3"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 4"></td>
+					</tr>
+					<tr>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 1"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 2"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 3"></td>
+					<td><img class="featurette-image img-responsive center-block" alt="Book 4"></td>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+		 </div>        
+		  <div id="blogs">         
+			<h4>Blogs</h4>
+			<hr/>
+			<ul>
+				<li>Title 1</li>
+				<li>Title 2</li>
+				<li>Title 3</li>
+				<li>Title 4</li>
+			<ul>
 		  </div>
 		</div>
+		<nav class="col-sm-4" id="myScrollspy">
+		  <ul class="nav nav-stacked" data-spy="affix">
+			<li class="active"><a href="#projects">Projects</a></li>
+			<li><a href="#books">Books</a></li>
+			<li><a href="#blogs">Blogs</a></li>
+		  </ul>
+		</nav>
 	  </div>
 	</div>
 
