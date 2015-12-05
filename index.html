@@ -5,47 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Main page of franky.id personal website">
+    <meta name="description" content="Main page of franky.id website">
     <meta name="author" content="franky.id">
     <link rel="icon" type="image/jpeg" href="image/profile_pic.jpg">
 
-    <title>franky.id Personal Website</title>
+    <title>$> the website</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 	
   </head>
 
- <!-- NAVBAR
-================================================== -->
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-	 <div class="container">
-	 	 <div class="row">
-		<h3>franky.id's Personal Website</h3>
-		<blockquote class="blockquote-reverse">
-		<p>A man in need is a man indeed, yes, indeed a man</p>
-		<footer>Elementary School Notebook</footer>
-		</blockquote>
-	 </div>
-	<div class="row">
-		<div class="progress">
-			<div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"
-			aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
-			99%, almost there, a little bit more
+	<div class="container">
+	 	<!-- Header -->
+		<div class="row">
+<!-- 			<div class="col-sm-4">
+				<h2 style="font-family: 'Slabo 27px', serif;">&nbsp;franky.id&nbsp;&nbsp;</h2>
+			</div> -->
+			<div class="col-sm-12">
+				<br/>
+				<blockquote class="blockquote">
+				<p style="font-family: 'Pacifico', cursive;"><br/><i>A man in need is a man indeed, yes, indeed a man</i></p>
+				<footer>Gibberish Elementary School Notebook</footer>
+				</blockquote>
+			</div>
+<!-- 			<div class="col-sm-4 text-right">
+				<br/>
+				<img src="image/profile_pic.jpg" class="img-circle" width="100px" height="auto">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</div> -->
+		</div>
+		<div class="row">
+			<div class="col-sm-8 text-primary">
+			
+			</div>
+			<div class="col-sm-4 text-center">
+				<a href="https://github.com/frankydotid"><kbd>&nbsp;GitHub&nbsp;</kbd></a>
+				<a href="https://twitter.com/frankydotid"><kbd>&nbsp;Twitter&nbsp;</kbd></a>
+				<kbd data-toggle="tooltip" title="Mail me: franky.id on gmail">&nbsp;Mail-E&nbsp;</kbd>
+				<hr/>
 			</div>
 		</div>
-	</div>
-	 <div class="row">
-		<div class="col-sm-8">
-		  <div id="projects">    
-			<h4>Projects</h4>
-			<hr/>
-			<table class="table" border="0">
-				<tbody>
+		
+		
+		<!-- Body -->
+		<div class="row">
+		
+			<!-- Content -->
+			<div class="col-sm-10">
+				<!-- Project List -->
+				<div id="projects">    
+					<h4>Projects</h4>
+					<hr/>
+					<table class="table" border="0">
+					<tbody>
 					<tr>
 					<td><img class="featurette-image img-responsive center-block" alt="Project 1"></td>
 					<td><img class="featurette-image img-responsive center-block" alt="Project 2"></td>			
@@ -58,15 +77,17 @@
 					<td><img class="featurette-image img-responsive center-block" alt="Project 1"></td>
 					<td><img class="featurette-image img-responsive center-block" alt="Project 2"></td>
 					</tr>
-				</tbody>
-			</table>
-		    <br/>
-		  </div>
-		  <div id="books"> 
-			<h4>Books</h4>
-			<hr/>
-			<table class="table table-bordered">
-				<tbody>
+					</tbody>
+					</table>
+					<br/>
+				</div>
+				
+				<!-- Book List -->
+				<div id="books"> 
+					<h4>Books</h4>
+					<hr/>
+					<table class="table table-bordered">
+					<tbody>
 					<tr>
 					<td><img class="featurette-image img-responsive center-block" alt="Book 1"></td>
 					<td><img class="featurette-image img-responsive center-block" alt="Book 2"></td>
@@ -85,29 +106,33 @@
 					<td><img class="featurette-image img-responsive center-block" alt="Book 3"></td>
 					<td><img class="featurette-image img-responsive center-block" alt="Book 4"></td>
 					</tr>
-				</tbody>
-			</table>
-			<br/>
-		 </div>        
-		  <div id="blogs">         
-			<h4>Blogs</h4>
-			<hr/>
-			<ul>
-				<li>Title 1</li>
-				<li>Title 2</li>
-				<li>Title 3</li>
-				<li>Title 4</li>
-			<ul>
-		  </div>
+					</tbody>
+					</table>
+					<br/>
+				</div> 
+
+				<!-- Latset blogs index -->
+				<div id="blogs">         
+					<h4>Blogs</h4>
+					<hr/>
+					<ul>
+					<li>Title 1</li>
+					<li>Title 2</li>
+					<li>Title 3</li>
+					<li>Title 4</li>
+					<ul>
+				</div>
+			</div>
+			
+			<!-- Side navigation -->
+			<nav class="col-sm-2" id="myScrollspy">
+				<ul class="nav nav-stacked" data-spy="affix">
+				<li class="active"><a href="#projects">Projects</a></li>
+				<li><a href="#books">Books</a></li>
+				<li><a href="#blogs">Blogs</a></li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="col-sm-4" id="myScrollspy">
-		  <ul class="nav nav-stacked" data-spy="affix">
-			<li class="active"><a href="#projects">Projects</a></li>
-			<li><a href="#books">Books</a></li>
-			<li><a href="#blogs">Blogs</a></li>
-		  </ul>
-		</nav>
-	  </div>
 	</div>
 
     <!-- Bootstrap core JavaScript
