@@ -9,7 +9,7 @@
     <meta name="author" content="franky.id">
     <link rel="icon" type="image/jpeg" href="image/profile_pic.jpg">
 
-    <title>$> the website</title>
+    <title>franky.id</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
 			<div class="col-sm-4 text-center">
 				<a href="https://github.com/frankydotid"><kbd>&nbsp;GitHub&nbsp;</kbd></a>
 				<a href="https://twitter.com/frankydotid"><kbd>&nbsp;Twitter&nbsp;</kbd></a>
-				<kbd data-toggle="tooltip" title="Mail me: franky.id on gmail">&nbsp;Mail-E&nbsp;</kbd>
+				<a href="#" data-toggle="popover" data-content="franky.id at gmail dot com" data-placement="bottom"><kbd>&nbsp;Mail Me&nbsp;</kbd></a>
 				<hr/>
 			</div>
 		</div>
@@ -140,6 +140,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>
 </body>
 </html>                               
   
