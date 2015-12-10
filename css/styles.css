@@ -2,3 +2,17 @@
     border: 0px !important;
 }
 
+div.indexstyle p, div.indexstyle th, div.indexstyle td {
+	font-family: Cabin;
+	font-style: sans-serif;
+}
+
+div.indexstyle h2 {
+	font-family: Pacifico;
+	font-style: cursive;
+}
+
+nav.indexstyle li {
+	font-family: Cabin;
+	font-style: sans-serif;
+}
