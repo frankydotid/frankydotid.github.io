@@ -13,16 +13,24 @@ title: franky.id
 	<div class="col-sm-10 text-center">
 
 		<!-- Latset blogs index -->
-		<div id="blogs" class="indexstyle">         
+		<div id="blogs" class="indexstyle">
 			<h2>Blogs</h2>
 			<hr/>
-			<p>Title 1</p>
+			{% for post in site.posts %}
+			<p>
+				<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+				 - 
+				<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</p>
+			{% endfor %}
+
+			<!-- 			<p>Title 1</p>
 			<p>The Second Title</p>
 			<p>If I Manage to Get to Third Post</p>
 			<p>Yep, Fourth One</p>
 			<p>Fifth? Maybe</p>
 			<p>Now We Are on Sixth?</p>
-			<p>Yeay! Seventh</p>
+			<p>Yeay! Seventh</p> -->
 		</div>
 		
 		<br/>

@@ -12,7 +12,8 @@ div.indexstyle h2 {
 	font-style: cursive;
 }
 
-nav.indexstyle li {
+nav.indexstyle li,  nav.indexstyle a {
 	font-family: Cabin;
 	font-style: sans-serif;
+	color: black;
 }
