@@ -3,19 +3,21 @@ layout: default
 ---
 
 <div class="row">
+	<div class="col-sm-2">
+	</div>
 	{% if page.tags contains "poetry" %}
-		<div class="col-sm-11 indexstyle text-center">
+		<div class="col-sm-8 indexstyle text-center">
 			<h2 class="post-title">{{ page.title }}</h2>
 			<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 			<p>{{ content }}</p>
 		</div>
 	{% else %}
-		<div class="col-sm-11 indexstyle">
+		<div class="col-sm-8 indexstyle">
 			<h2 class="post-title">{{ page.title }}</h2>
 			<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
 			<p>{{ content }}</p>
 		</div>
 	{% endif %}
-	<div class="col-sm-1">
+	<div class="col-sm-2">
 	</div>
 </div>

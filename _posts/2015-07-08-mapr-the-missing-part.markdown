@@ -17,7 +17,7 @@ Throughout the assessment and hands-on testing, we are becoming more and more co
 
 The table below shows the comparison that we made, which a little bit bias towards what MapR provides. We really like the NFS support. It is very easy to copy and paste files to your Hadoop cluster. The mirroring and snapshot are also great. What is also great is that it used less number of hardware, though a little bit of higher in specification, but still cheaper. This is because these two vendors charged the license by the number of node (machine) you use. Less machine, less license, less cost. No additional stand-by Namenode or Resource Manager, which look like a waste of money.
 
-[Comparison of MapR and Cloudera]({{ site.url }}/image/mapr-vs-cloudera.jpg)
+![Comparison of MapR and Cloudera]({{ site.url }}/image/mapr-vs-cloudera.jpg)
 
 
 ***The Missing Part
