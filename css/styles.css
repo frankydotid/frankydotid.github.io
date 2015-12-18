@@ -1,7 +1,4 @@
-.borderless th, .borderless td {
-    border: 0px !important;
-}
-
+/* Style for index (main) page */
 div.indexstyle p, div.indexstyle th, div.indexstyle td {
 	font-family: Cabin;
 	font-style: sans-serif;
@@ -18,6 +15,24 @@ nav.indexstyle li,  nav.indexstyle a {
 	color: black;
 }
 
+/* Style for blog post */
+div.poststyle p, div.poststyle th, div.poststyle td {
+	font-family: Cabin;
+	font-style: sans-serif;
+	font-size: 110%;
+}
+
+div.poststyle h2 {
+	font-family: Pacifico;
+	font-style: cursive;
+}
+
+/* Centering image for img with image-responsive class*/
 .img-responsive-centered {
 	margin: 0 auto;
+}
+
+/* Borderless table */
+.borderless th, .borderless td {
+    border: 0px;
 }
