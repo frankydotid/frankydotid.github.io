@@ -7,11 +7,6 @@ div.indexstyle p, div.indexstyle th, div.indexstyle td {
 	font-style: sans-serif;
 }
 
-div.indexstyleserious p, div.indexstyle th, div.indexstyle td {
-	font-family: Cabin;
-	font-style: sans-serif;
-}
-
 div.indexstyle h2 {
 	font-family: Pacifico;
 	font-style: cursive;
@@ -21,4 +16,8 @@ nav.indexstyle li,  nav.indexstyle a {
 	font-family: Cabin;
 	font-style: sans-serif;
 	color: black;
+}
+
+.img-responsive-centered {
+	margin: 0 auto;
 }
