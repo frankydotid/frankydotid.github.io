@@ -33,6 +33,6 @@ div.poststyle h2 {
 }
 
 /* Borderless table */
-.borderless th, .borderless td {
-    border: 0px;
+.borderless tbody tr th, .borderless tbody tr td, .borderless thead tr th {
+    border: none;
 }
