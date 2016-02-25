@@ -62,7 +62,7 @@ There are some options for salting and choosing different encryption or hashing 
 
 <br/>
 
-**Verifying*
+**Verifying**
 
 In order to verify the data integrity of your backup in `tar.gz` file, [some say](http://stackoverflow.com/questions/2001709/how-to-check-if-a-unix-tar-gz-file-is-a-valid-file-without-uncompressing) that you can just run `tar -tf <yourtarfile>` to list the content. If `tar` is satisfy, then everything is just fine.
 
