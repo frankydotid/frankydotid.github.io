@@ -46,3 +46,27 @@ Changing the timezone to your local timezone:
 
 `ln -s /usr/share/zoneinfo/<your timezone> /etc/localtime`
 
+<br/>
+
+**Encryption**
+
+There are some ways to encrypt your file. One that I found when I wanted to encrypt my `tar.gz` file is from [here](http://superuser.com/questions/162624/how-to-password-protect-gzip-files-on-the-command-line), using `openssl`. You can go like this if you want to do symmetric basic encryption with AES-256:
+
+`openssl enc -aes-256-cbc -e -in <yourfilename> -out <yourencryptedfilename>`
+
+To decrypt it, you can do this:
+
+`openssl -aes-256-cbc -d -in <yourencryptedfilename> -out <yourdecryptedfilename>`
+
+There are some options for salting and choosing different encryption or hashing algorithm. A `gpg` command can be used if you prefer public/private key encryption type.
+
+<br/>
+
+**Verifying*
+
+In order to verify the data integrity of your backup in `tar.gz` file, [some say](http://stackoverflow.com/questions/2001709/how-to-check-if-a-unix-tar-gz-file-is-a-valid-file-without-uncompressing) that you can just run `tar -tf <yourtarfile>` to list the content. If `tar` is satisfy, then everything is just fine.
+
+<br/>
+
+
+
