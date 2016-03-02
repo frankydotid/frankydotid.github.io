@@ -62,11 +62,17 @@ There are some options for salting and choosing different encryption or hashing 
 
 <br/>
 
-**Verifying**
+**Verifying Tar**
 
 In order to verify the data integrity of your backup in `tar.gz` file, [some say](http://stackoverflow.com/questions/2001709/how-to-check-if-a-unix-tar-gz-file-is-a-valid-file-without-uncompressing) that you can just run `tar -tf <yourtarfile>` to list the content. If `tar` is satisfy, then everything is just fine.
 
 <br/>
 
+**SNMP Trouble**
 
+I can get a result of `snmpwalk -v1 -c public localhost system`, but when I'm using my public IP address instead of `localhost`, I get a no response error. When I ask the network team: "No rule for that, nothing will block it".
+
+It turns out that you a self-introspection is necessary for the server itself, as for a human. Check your `hosts.allow` file, and ensure you have `snmpd: <allowed segments/ip/ALL>` in there. See [here](http://www.net-snmp.org/wiki/index.php/FAQ:Agent_30) or [here](https://access.redhat.com/discussions/1394813).
+
+<br/>
 
