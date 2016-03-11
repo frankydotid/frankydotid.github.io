@@ -76,3 +76,21 @@ It turns out that a self-introspection is as necessary for the server itself as 
 
 <br/>
 
+**ACL on Linux**
+
+Thanks to the security team, I learned that Linux (CentOS) can have ACL (access controls list). The security team reviewer, who has a very limited knowledge about Linux, push the idea of there should be an ACL to protect those sensitive files. I tried to defend myself saying that Linux doesn't work like that. I was wrong. See [here](https://www.centos.org/docs/5/html/Deployment_Guide-en-US/s1-acls-setting.html)
+
+Basically, you can use `setfacl` utility to set ACL. A file or directory that has an ACL set will have a `+` (plus) sign at the end of the permission information, when you do `ls -l`. 
+
+The basic commands are (use `u` for user and `g` for group):
+
+- To set ACL rule, do `setfacl -m u:<username>:<rwx> <file/dirname>`, e.g., `setfacl -m u:johndoe:rw- /etc/hosts` to allow `rw` access to `/etc/hosts` file for `johndoe`. This ACL will overwrite the standard permission set by `chmod`-ing the file.
+
+- To get information about ACL rule set: `getfacl <file/dirname>`
+
+- To remove ACL rule: `setfacl -x u:<username> <file/dirname>`
+
+- To remove all ACL rules set on a file or directory: `setfacl -b <file/dirname>`
+
+<br/>
+
