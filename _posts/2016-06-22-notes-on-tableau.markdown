@@ -11,6 +11,7 @@ Notes on using Tableau Desktop (v9.3) - no server.
 <br/>
 
 **Live and Extract Mode**
+
 When connecting to a data source, you can choose between Live or Extract mode. The Live mode will make Tableau to query the database for any changes related to the data you want to view. Use this if your database is super fast. 
 
 While the Extract mode will tell Tableau to download the data as tableau extract file (.tde) to you machine, and load it into you local memory. Use this if your database performance is slowly killing your patience. Please note that your local machine needs to have enough memory and processing power. 
