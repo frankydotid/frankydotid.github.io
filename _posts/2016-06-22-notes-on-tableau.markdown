@@ -36,3 +36,10 @@ And, reading from the release notes of Impala ODBC, if you are on a windows mach
 
 <br/>
 
+**Error "Online map could not be loaded"**
+
+Check your Tableau Desktop logs at '~\Documents\My Tableau Repository\Logs'. In my case, the error is caused by 'Internet communication error: SSL connect error'. The problem, I suppose, is because the local machine cannot verify the SSL/TLS Certificate provided by tableau maps provider.
+
+My solution was to open one of the link that Tableau tried to access in Internet Explorer, so that the SSL/TLS Certificate can be recognized, e.g., open 'https://maps.tableausofware.com'. 
+
+
