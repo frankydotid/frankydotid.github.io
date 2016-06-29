@@ -6,14 +6,19 @@ tags: technical
 ---
 <br/>
 
-> It should be one time. It should be automatically detected. You wish!
-
-I was trying to follow a tutorial on real-time event processing by [Hortonworks](http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/), to the step where I needed to download and install several things on the sandbox. My network was behind a proxy, with authentication. It was a time-consuming experience to *just* download packages through the proxy, but probably, worth it. The three main programs are `git`, `wget`, and `maven`.
+I was trying to follow a tutorial on real-time event processing by [Hortonworks](http://hortonworks.com/hadoop-tutorial/realtime-event-processing-nifi-kafka-storm/), to the step where I needed to download and install several things on the sandbox. My network was behind a proxy, with authentication. It was a time-consuming experience to *just* download packages through the proxy, but probably, worth it. I need to set separately the three main programs used for downloading and setting up the tutorial: `git`, `wget`, and `maven`.
 
 On Linux, you can set a proxy for your internet connection by `export`-ing or setting the environment variable `HTTP_PROXY` or `HTTPS_PROXY`, etc. The format is: `HTTP_PROXY=[DOMAIN]\[USERNAME]:[PASSWORDINPLAINTEXT]@[PROXY_URL]:[THE_PORT]`. The [DOMAIN] and [USERNAME] are only required when your proxy needs an authentication. In theory, any programs that required an internet connection should use this. In practice, this information might need to be repeated somewhere else.
 
+> It should be one time. It should be automatically detected. You wish!
+
 **git with proxy** 
 
+The command to use `git` with proxy should be quite simple. You need to update the global config:
+
+```shell
+git config --global http.proxy http://[DOMAIN]\[USERNAME]:[PASSWORDINPLAINTEXT]@[PROXY_URL]:[THE_PORT]
+```
 
 <br/>
 
@@ -27,5 +32,8 @@ HTTP_PROXY=http://johndoe:password@127.0.0.1:8080
 ```
 
 **maven with proxy** 
+
+Maven has another different way of connecting through proxy. The configuration needs to be put in `settings.xml` file, which depends on your need can be set as global in `${maven.home}/conf/settings.xml` or for your eyes only in `${user.home}/.m2/settings.xml`. Find the `proxies` tag and fill up the information for the proxy there. The `settings.xml` can be used as a template on what attributes are available to set. You can find the reference on [Maven's site](https://maven.apache.org/guides/mini/guide-proxies.html)
+
 
 <br/>
