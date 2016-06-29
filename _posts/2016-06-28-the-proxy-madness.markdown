@@ -14,7 +14,11 @@ On Linux, you can set a proxy for your internet connection by `export`-ing or se
 
 **git with proxy** 
 
+
+<br/>
+
 **wget with proxy** 
+
 The `wget` program should be using your `HTTP_PROXY` variable. But, sometimes you may need to set it somewhere else. The config file that you are looking for is `wgetrc`. The global one is located at `/etc/wgetrc`. If you don't have access to edit the global config file, you can set it up for yourself in your home directory as `~/.wgetrc`. The basic information that you need to put are `use_proxy`, that tells `wget` to use a proxy, and `HTTP_PROXY` or other proxy variables that tells you the URL for the proxy and the credential (username and password) for authentication. 
 
 ```shell
