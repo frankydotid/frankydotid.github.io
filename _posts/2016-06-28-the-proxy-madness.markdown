@@ -35,6 +35,8 @@ use_proxy=yes
 HTTP_PROXY=http://johndoe:password@127.0.0.1:8080
 ```
 
+<br/>
+
 **Maven with proxy** 
 
 Maven has another different way of connecting through proxy. The configuration needs to be put in `settings.xml` file, which depends on your need can be set as global in `${maven.home}/conf/settings.xml` or for your eyes only in `${user.home}/.m2/settings.xml`. Find the `proxies` tag and fill up the information for the proxy there. The `settings.xml` can be used as a template on what attributes are available to set. You can find the reference on [Maven's site](https://maven.apache.org/guides/mini/guide-proxies.html)
