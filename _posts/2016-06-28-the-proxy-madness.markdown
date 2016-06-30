@@ -10,7 +10,7 @@ I was trying to follow a tutorial on real-time event processing by [Hortonworks]
 
 On Linux, you can set a proxy for your internet connection by `export`-ing or setting the environment variable `HTTP_PROXY` or `HTTPS_PROXY`, etc. The format is: `HTTP_PROXY=[DOMAIN]\[USERNAME]:[PASSWORDINPLAINTEXT]@[PROXY_URL]:[THE_PORT]`. The [DOMAIN] and [USERNAME] are only required when your proxy needs an authentication. In theory, any programs that required an internet connection should use this. In practice, this information might need to be repeated somewhere else.
 
-The environment variable for proxy itself can be in lower case (http_proxy) or upper case (HTTP_PROXY), depending on the program or library used. So, it's better to set for both cases in your profile.
+The environment variable for proxy itself can be in lower case (`http_proxy`) or upper case (`HTTP_PROXY`), depending on the program or library used. So, it's better to set for both cases in your profile. And, don't forget to set the `HTTPS_PROXY` and `https_proxy` for https connection.
 
 <br/>
 
