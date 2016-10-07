@@ -94,3 +94,13 @@ The basic commands are (use `u` for user and `g` for group):
 
 <br/>
 
+**Apache2: Forbidden and Forbid**
+
+I added a directory `image/` under my root web directory, but it returned a `Forbidden` error when I tried to access it. The error was something like this: `... because search permissions are missing on a component of the path ...`. It turned out that the directory needs to have a `+x` permission on it. Changing the permission to `755` from, previously `644`, worked.
+
+I could now see the directory listing of the `image/` when I accessed the address. Instead of being forbidden, now, I wanted to forbid. Fortunately, I could use a `.htaccess` file inside the directory, and I just needed to put an option directive `Options -Indexes` to disallow the directory listing. Puff...
+
+<br/>
+
+
+<br/>
